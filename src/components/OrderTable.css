@@ -1,0 +1,83 @@
+/* OrderTable.css */
+.container {
+  max-width: 95%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 16px;
+  text-align: center;
+  color:blanchedalmond;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(241, 56, 130, 0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+select {
+  padding: 4px 8px;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.orange {
+  color: orange;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+
+table td,
+table th {
+  padding: 4px 8px !important;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+
